@@ -3,7 +3,7 @@ const router = express.Router();
 const {
   getMessages,
   //   updateMessages,
-  setMessages,
+  setNewMessages,
   //   deleteMessage,
 } = require("../controllers/messageController");
 
@@ -13,7 +13,7 @@ router.get("/", getMessages);
 //   res.status(200).json({ create: "create new message" });
 // });
 
-router.post("/", setMessages);
+router.post("/", setNewMessages);
 
 // router.put("/:id", updateMessages);
 
